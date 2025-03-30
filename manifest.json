@@ -1,0 +1,11 @@
+{
+	"Name": "[Si] Weighted Companion Cube NPC",
+	"Author": "SiTheGreat",
+	"Description": "Adds the Weighted Companion Cube from Portal as an NPC.",
+	"Version": "1.0.0",
+	"UniqueID": "Si.WCC",
+	"UpdateKeys": [ "Nexus:" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+	},
+}
