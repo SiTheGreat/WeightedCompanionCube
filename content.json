@@ -2,6 +2,8 @@
 
 	"Format": "2.0.0",
 
+	// Book: Aperture Science Weighted Companion Cube Instruction Manual
+
 	"ConfigSchema": {
 
 		"Personality": {
@@ -15,43 +17,43 @@
 
 		{
 			"Name": "Sched_1",
-			"Value": "0 Town 81 27",
+			"Value": "0 Town 81 27 2",
 		},
 		{
 			"Name": "Sched_2",
-			"Value": "0 Town 81 27",
+			"Value": "0 Mountain 88 21 2",
 		},
 		{
 			"Name": "Sched_3",
-			"Value": "0 Town 81 27",
+			"Value": "0 Beach 11 5 2",
 		},
 		{
 			"Name": "Sched_4",
-			"Value": "0 Town 81 27",
+			"Value": "0 Forest 28 61 2",
 		},
 		{
 			"Name": "Sched_5",
-			"Value": "0 Town 81 27",
+			"Value": "0 SeedShop 35 17 2",
 		},
 		{
 			"Name": "Sched_6",
-			"Value": "0 Town 81 27",
+			"Value": "0 ScienceHouse 22 17 2",
 		},
 		{
 			"Name": "Sched_7",
-			"Value": "0 Town 81 27",
+			"Value": "0 ArchaeologyHouse 21 16 2",
 		},
 		{
 			"Name": "Sched_8",
-			"Value": "0 Town 81 27",
+			"Value": "0 Sewer 2 21 2",
 		},
 		{
 			"Name": "Sched_9",
-			"Value": "0 Town 81 27",
+			"Value": "0 BathHouse_Pool 14 8 2",
 		},
 		{
 			"Name": "Sched_10",
-			"Value": "0 Town 81 27",
+			"Value": "0 Railroad 31 36 2",
 		},
 
 	],
@@ -66,10 +68,10 @@
 		"Entries": {
 			"{{ModId}}_prop_weighted_cube": {
 				// Char
-				"DisplayName": "Weighted Companion Cube",
+				"DisplayName": "Companion Cube",
 				"Gender": "Undefined",
-				"Age": "Adult",
-				"BirthSeason": "Fall", // chang
+				"Age": "Child",
+				"BirthSeason": "Summer",
 				"BirthDay": 17,
 				// Attitude
 				"Manner": "Rude",
@@ -84,6 +86,7 @@
 				"WinterStarParticipant": false,
 				"CanCommentOnPurchasedShopItems": false,
 				"CanGreetNearbyCharacters": false,
+				"Breather": false,
 				"SocialTab": "HiddenUntilMet",
 				"Calendar": "HiddenUntilMet",
 				// "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host {{ModId}}_E1",
@@ -139,7 +142,7 @@
 		"Action": "EditData",
 		"Target": "Characters/schedules/{{ModId}}_prop_weighted_cube",
 		"Entries": {
-			"spring": "{{Sched_{{Random: {{Range: 1,10}} }} }}",
+			"spring": "{{Sched_{{Random:{{Range:1,10}}}}}}",
 			},
 	},
 
@@ -151,12 +154,14 @@
 		"Entries": {
 			// Gift Responses
 			"AcceptGift_(O)StardropTea": "...",
-			"RejectGift_(O)554": "*It bounces off the Weighted Companion Cube and hits you in the face.*", // Lemon Stone
+			"RejectGift_(O)554": "It bounces off the Weighted Companion Cube and hits you in the face.", // Lemon Stone
 			// Regular Dialogue
-			"AcceptBirthdayGift_Positive": "...",
+			"AcceptBirthdayGift": "...",
+			"RejectBouquet": "...",
 			"DumpsterDiveComment": "...",
 			"HitBySlingshot": "...",
 			"RejectMovieTicket": "...",
+			"GreenRain":"...",
 			"rainy": "...",
 			"Mon": "...",
 			"Tue": "...",
