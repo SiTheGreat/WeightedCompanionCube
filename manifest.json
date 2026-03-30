@@ -1,7 +1,7 @@
 {
 	"Name": "[Si] Weighted Companion Cube NPC",
 	"Author": "SiTheGreat",
-	"Description": "Adds the Weighted Companion Cube from Portal as an NPC.",
+	"Description": "Contains one (1) Weighted Companion Cube. Incinerator not included.",
 	"Version": "1.0.0",
 	"UniqueID": "Si.WCC",
 	"UpdateKeys": [ "Nexus:" ],
